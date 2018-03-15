@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgb(255, 0, 157);
+    display: inline-block;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    background-color: rgb(255, 0, 157);
+    height: 20px;
+    width: 15px;
+    color: white;
+    padding-left: 5px;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black inset;
+    display: inline-block;
+    background-color: rgba(0,0,0,1);
+}

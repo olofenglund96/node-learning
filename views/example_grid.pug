@@ -1,0 +1,14 @@
+mixin cell(val)
+    div(class="cell")= val
+
+html
+    head
+        link(rel="stylesheet", href="styles/example_grid.css")
+    body
+        div(class="image-container")
+            each image in images
+                div(class="image")
+                    each stack, label in image  
+                        div(class="label")= label
+                        each c in stack
+                            div(class="cell", style="background-color: rgba("+c+","+c+","+c+",1);") 
